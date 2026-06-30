@@ -1,11 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>0xCYPHER // Security Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Arslan Saeed // Full Stack Developer & Cybersecurity Student</title><link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet"><style>
   :root {
     --cyan: #00f5ff;
     --green: #00ff41;
@@ -1054,359 +1048,213 @@
     .hero-btns { flex-direction: column; align-items: center; }
     .btn { width: 100%; justify-content: center; }
   }
-</style>
-</head>
-<body>
 
-<!-- Matrix Background -->
+
+  /* ── V2 ADDITIONS: content-only upgrade, same cyber visual identity ── */
+  .badge-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:1.5rem 0 0}.mini-badge{font-family:var(--font-mono);font-size:.7rem;color:var(--cyan);border:1px solid rgba(0,245,255,.25);background:rgba(0,245,255,.04);padding:6px 12px;letter-spacing:1px;text-transform:uppercase}.project-img{height:170px;border-bottom:1px solid var(--border);background:rgba(0,245,255,.03);overflow:hidden;display:flex;align-items:center;justify-content:center}.project-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.95) contrast(1.05);opacity:.92}.project-card:hover .project-img img{transform:scale(1.04);transition:transform .45s ease}.project-badge{font-family:var(--font-mono);font-size:.62rem;color:var(--green);border:1px solid rgba(0,255,65,.3);background:rgba(0,255,65,.05);padding:3px 9px;letter-spacing:1px;text-transform:uppercase}.services-grid,.why-grid,.timeline-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;max-width:1100px;margin:0 auto}.service-card,.why-card,.timeline-card{background:var(--panel);border:1px solid var(--border);padding:1.6rem;position:relative;transition:.3s}.service-card:hover,.why-card:hover,.timeline-card:hover{border-color:var(--border-hot);box-shadow:0 0 30px rgba(0,245,255,.08);transform:translateY(-4px)}.service-card h3,.why-card h3,.timeline-card h3{font-family:var(--font-head);font-size:.95rem;color:#fff;margin-bottom:.7rem;letter-spacing:1px}.service-card p,.why-card p,.timeline-card p{color:var(--text-dim);font-size:.95rem;font-weight:300}.service-icon,.why-icon,.timeline-icon{font-size:2rem;margin-bottom:.8rem;display:block}.tech-cloud{max-width:1000px;margin:0 auto;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.tech-pill{font-family:var(--font-mono);font-size:.78rem;color:var(--text);border:1px solid var(--border);background:var(--panel);padding:10px 16px;letter-spacing:1px}.tech-pill:hover{color:var(--cyan);border-color:var(--border-hot);box-shadow:var(--glow-cyan)}.cv-panel{max-width:900px;margin:0 auto;background:var(--panel);border:1px solid var(--border);padding:2rem;display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}.cv-panel h3{font-family:var(--font-head);color:#fff;margin-bottom:1rem}.cv-panel p{color:var(--text-dim);font-weight:300;margin-bottom:1.2rem}.cv-list{list-style:none;display:grid;gap:.6rem}.cv-list li{font-family:var(--font-mono);font-size:.78rem;color:var(--text);border-left:2px solid var(--cyan);padding-left:10px}.cta-strip{max-width:950px;margin:3rem auto 0;text-align:center;border:1px solid var(--border-hot);background:linear-gradient(135deg,rgba(0,245,255,.05),rgba(0,255,65,.03));padding:2rem}.cta-strip h3{font-family:var(--font-head);color:#fff;margin-bottom:.8rem}.cta-strip p{color:var(--text-dim);margin-bottom:1.2rem}.contact-link .cl-value a{color:var(--cyan);text-decoration:none}.contact-link .cl-value a:hover{text-shadow:var(--glow-cyan)}
+  @media(max-width:768px){.cv-panel{grid-template-columns:1fr}.project-img{height:150px}}
+</style></head><body><!-- Matrix Background -->
 <canvas id="matrix-canvas"></canvas>
 
-<!-- NAVBAR -->
 <nav id="navbar">
-  <a href="#hero" class="nav-logo">0x<span>CYPHER</span></a>
+  <a href="#hero" class="nav-logo">ARSLAN<span> SAEED</span></a>
   <ul class="nav-links" id="nav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#cyber">Cyber</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <div class="nav-status">
-    <div class="status-dot"></div>
-    AVAILABLE FOR HIRE
-  </div>
-  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
+  <div class="nav-status"><div class="status-dot"></div>AVAILABLE FOR HIRE</div>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
   <div class="hero-content">
-    <div class="hero-tag">INITIALIZING SECURITY PROTOCOL</div>
-    <h1 class="hero-title">
-      <div>Arslan</div>
-      <div class="glitch" data-text="MERCER">Saeed</div>
-    </h1>
+    <div class="hero-tag">BUILDING SECURE DIGITAL PRODUCTS</div>
+    <h1 class="hero-title"><div>Arslan</div><div class="glitch" data-text="SAEED">SAEED</div></h1>
     <p class="hero-subtitle" id="typing-text"><span class="cursor"></span></p>
-    <p class="hero-desc">
-      Penetration tester and security researcher with a passion for breaking systems ethically — then making them bulletproof.
-    </p>
+    <p class="hero-desc">I build modern, responsive and production-ready web applications for businesses, startups and personal brands. Alongside development, I am pursuing BS Cybersecurity and building hands-on projects in SOC monitoring, secure networking and web security.</p>
     <div class="hero-btns">
       <a href="#projects" class="btn">▶ View Projects</a>
-      <a href="#contact" class="btn btn-outline">⌁ Hire Me</a>
+      <a href="assets/Arslan_Saeed_CV.pdf" target="_blank" class="btn btn-outline">⬇ Download CV</a>
+      <a href="https://wa.me/923008971489" target="_blank" class="btn">⌁ Hire Me</a>
     </div>
+    <div class="badge-row"><span class="mini-badge">Full Stack Developer</span><span class="mini-badge">Cybersecurity Student</span><span class="mini-badge">FastAPI / Supabase</span><span class="mini-badge">Open for Freelance</span></div>
     <div class="hero-stats">
-      <div class="stat"><span class="stat-num" data-target="47">0</span><span class="stat-label">CVEs Found</span></div>
-      <div class="stat"><span class="stat-num" data-target="2+">0</span><span class="stat-label">Systems Pentested</span></div>
-      <div class="stat"><span class="stat-num" data-target="5">0</span><span class="stat-label">Certifications</span></div>
+      <div class="stat"><span class="stat-num" data-target="12" data-suffix="+">0</span><span class="stat-label">Projects Built</span></div>
+      <div class="stat"><span class="stat-num" data-target="8" data-suffix="+">0</span><span class="stat-label">Live Deployments</span></div>
+      <div class="stat"><span class="stat-num" data-target="1" data-suffix="">0</span><span class="stat-label">Real Client Project</span></div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-header reveal">
-    <span class="section-num">01.</span>
-    <h2 class="section-title">About <span>Me</span></h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="about-grid">
-    <div class="about-avatar reveal">
-      <div class="avatar-frame">
-        <div class="avatar-bg">
-          🛡️
-          <div class="avatar-scan"></div>
-        </div>
-      </div>
-    </div>
-    <div class="about-text reveal">
-      <h3>Security Researcher & Ethical Hacker</h3>
-      <p>I'm a <strong>cybersecurity specialist</strong> Arslan Saeed learning  offensive security, vulnerability research, and red team operations. I find holes before the bad guys do.</p>
-      <p>Specializing in <strong>network penetration testing</strong>, web application security, and advanced persistent threat simulation. I've have solved multiple CTFS .</p>
-      <p>WWhen I’m not learning cybersecurity concepts, I spend my time practicing CTF challenges, improving my networking and ethical hacking skills, and building beginner-level security projects to gain hands-on experience in the cybersecurity field..</p>
-      <div class="about-tags">
-        <span class="tag">Networking</span>
-        <span class="tag">Cyber Threads</span>
-        <span class="tag">CCNA</span>
-        <span class="tag">Ethical Hacker</span>
-        <span class="tag">Bug Bounty</span>
-        <span class="tag">CTF Player</span>
-        <span class="tag">Threat Intel</span>
-        <span class="tag">Forensics</span>
-      </div>
-    </div>
+<section id="about"><div class="section-header reveal"><span class="section-num">01.</span><h2 class="section-title">About <span>Me</span></h2><div class="section-line"></div></div>
+  <div class="about-grid"><div class="about-avatar reveal"><div class="avatar-frame"><div class="avatar-bg">💻<div class="avatar-scan"></div></div></div></div>
+  <div class="about-text reveal"><h3>Software Developer with a Cybersecurity Mindset</h3>
+    <p>I'm <strong>Arslan Saeed</strong>, a BS Cybersecurity student at UMT Lahore and a full-stack developer focused on building clean, fast and secure web applications.</p>
+    <p>My work includes <strong>marketplaces, business websites, admin panels, portals, chatbot widgets and cybersecurity labs</strong>. I use technologies like Python, FastAPI, JavaScript, Supabase, PostgreSQL, GitHub, Railway and Vercel.</p>
+    <p>My long-term path is cybersecurity, but my current strength is shipping real software that businesses can use online.</p>
+    <div class="about-tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">JavaScript</span><span class="tag">Supabase</span><span class="tag">PostgreSQL</span><span class="tag">SOC Lab</span><span class="tag">Nmap</span><span class="tag">Wireshark</span><span class="tag">Snort IDS</span></div>
+  </div></div>
+</section>
+
+<section id="services"><div class="section-header reveal"><span class="section-num">02.</span><h2 class="section-title">Why <span>Hire Me</span></h2><div class="section-line"></div></div>
+  <div class="why-grid">
+    <div class="why-card reveal"><span class="why-icon">⚡</span><h3>Production Ready</h3><p>I focus on clean structure, practical features, deployment and real usability — not just static designs.</p></div>
+    <div class="why-card reveal"><span class="why-icon">🔐</span><h3>Security Mindset</h3><p>My cybersecurity background helps me think about authentication, access control, safe forms and secure configurations.</p></div>
+    <div class="why-card reveal"><span class="why-icon">📱</span><h3>Responsive UI</h3><p>Websites are built for desktop, tablet and mobile with modern layouts and smooth user experience.</p></div>
+    <div class="why-card reveal"><span class="why-icon">🚀</span><h3>Deployment Included</h3><p>I can deploy projects on Vercel, Railway, Render or similar platforms and connect domains properly.</p></div>
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-header reveal">
-    <span class="section-num">02.</span>
-    <h2 class="section-title">Tech <span>Arsenal</span></h2>
-    <div class="section-line"></div>
-  </div>
+<section id="skills"><div class="section-header reveal"><span class="section-num">03.</span><h2 class="section-title">Tech <span>Arsenal</span></h2><div class="section-line"></div></div>
   <div class="skills-grid">
-    <div class="skill-category reveal" style="transition-delay:0.1s">
-      <div class="skill-cat-title">Offensive Security</div>
-      <div class="skill-item"><div class="skill-meta"><span class="skill-name">Penetration Testing</span><span class="skill-pct">95%</span></div><div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></div>
-      <div class="skill-item"><div class="skill-meta"><span class="skill-name">Online Phishing </span><span class="skill-pct">88%</span></div><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
-      <div class="skill-item"><div class="skill-meta"><span class="skill-name">DDos Attacks</span><span class="skill-pct">82%</span></div><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div>
-      <div class="skill-item"><div class="skill-meta"><span class="skill-name">Social Engineering</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
-    </div>
-    <div class="skill-category reveal" style="transition-delay:0.2s">
-      <div class="skill-cat-title">Web & App Security</div>
-      <div class="skill-item"><div class="skill-meta"><span class="skill-name">OWASP Top 10</span><span class="skill-pct">97%</span></div><div class="skill-bar"><div class="skill-fill" data-width="97"></div></div></div>
-      <div class="skill-item"><div class="skill-meta"><span class="skill-name">Ejpt</span><span class="skill-pct">91%</span></div><div class="skill-bar"><div class="skill-fill" data-width="91"></div></div></div>
-      <div class="skill-item"><div class="skill-meta"><span class="skill-name">Mobile Security</span><span class="skill-pct">78%</span></div><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
-      <div class="skill-item"><div class="skill-meta"><span class="skill-name">Kali linux</span><span class="skill-pct">84%</span></div><div class="skill-bar"><div class="skill-fill" data-width="84"></div></div></div>
-    </div>
-    <div class="skill-category reveal" style="transition-delay:0.3s">
-      <div class="skill-cat-title">Tools & Languages</div>
-      <div class="skill-item"><div class="skill-meta"><span class="skill-name">Metasploit / Nmap</span><span class="skill-pct">96%</span></div><div class="skill-bar"><div class="skill-fill" data-width="96"></div></div></div>
-      <div class="skill-item"><div class="skill-meta"><span class="skill-name">Python / Bash Scripting</span><span class="skill-pct">92%</span></div><div class="skill-bar"><div class="skill-fill" data-width="92"></div></div></div>
-      <div class="skill-item"><div class="skill-meta"><span class="skill-name">Wireshark / Nmap</span><span class="skill-pct">94%</span></div><div class="skill-bar"><div class="skill-fill" data-width="94"></div></div></div>
-      <div class="skill-item"><div class="skill-meta"><span class="skill-name">SIEM / Log Analysis</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
-    </div>
+    <div class="skill-category reveal"><div class="skill-cat-title">Frontend Development</div><div class="about-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript ES6+</span><span class="tag">Responsive Design</span><span class="tag">UI/UX</span></div></div>
+    <div class="skill-category reveal"><div class="skill-cat-title">Backend & Databases</div><div class="about-tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">REST APIs</span><span class="tag">Supabase</span><span class="tag">PostgreSQL</span><span class="tag">SQLite</span><span class="tag">Firebase</span></div></div>
+    <div class="skill-category reveal"><div class="skill-cat-title">Cybersecurity</div><div class="about-tags"><span class="tag">Networking</span><span class="tag">Kali Linux</span><span class="tag">Nmap</span><span class="tag">Wireshark</span><span class="tag">Snort IDS</span><span class="tag">MITRE ATT&CK</span><span class="tag">OWASP Basics</span></div></div>
+    <div class="skill-category reveal"><div class="skill-cat-title">Tools & Deployment</div><div class="about-tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Vercel</span><span class="tag">Railway</span><span class="tag">VS Code</span><span class="tag">Streamlit</span><span class="tag">Packet Tracer</span></div></div>
   </div>
+  <div class="cta-strip reveal"><h3>Featured Technologies</h3><div class="tech-cloud"><span class="tech-pill">Python</span><span class="tech-pill">FastAPI</span><span class="tech-pill">JavaScript</span><span class="tech-pill">HTML/CSS</span><span class="tech-pill">SQL</span><span class="tech-pill">Supabase</span><span class="tech-pill">PostgreSQL</span><span class="tech-pill">Railway</span><span class="tech-pill">Vercel</span><span class="tech-pill">Linux</span></div></div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-header reveal">
-    <span class="section-num">03.</span>
-    <h2 class="section-title">Security <span>Projects</span></h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="projects-grid">
-
-    <div class="project-card reveal" style="transition-delay:0.1s">
+<section id="projects"><div class="section-header reveal"><span class="section-num">04.</span><h2 class="section-title">Featured <span>Projects</span></h2><div class="section-line"></div></div><div class="projects-grid"><div class="project-card reveal" style="transition-delay:0.1s">
       <div class="card-hover-glow"></div>
-      <div class="card-top"><div class="card-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div><span class="card-type">online cyber logs Detecter</span></div>
+      <div class="project-img"><img src="https://image.thum.io/get/width/900/crop/650/noanimate/https://trade-hub-tradehubpk.vercel.app/" alt="TradeHub PK screenshot"></div>
+      <div class="card-top"><div class="card-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div><span class="card-type">REAL CLIENT / MARKETPLACE</span></div>
       <div class="card-body">
-        <span class="card-icon">🔍</span>
-        <h3 class="card-title">PHANTOM RECON</h3>
-        <p class="card-desc">An automated OSINT framework that aggregates data from 50+ sources to build comprehensive target profiles for red team engagements. .</p>
-        <div class="card-tags"><span class="card-tag">Python</span><span class="card-tag">OSINT</span><span class="card-tag">API</span><span class="card-tag">Red Team</span></div>
+        <span class="card-icon">🏪</span><div style="display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:.5rem"><h3 class="card-title" style="margin-bottom:0">TradeHub PK</h3><span class="project-badge">Client Project</span></div>
+        <p class="card-desc">Client-ready B2B wholesale marketplace for Pakistan’s textile sector with supplier directory, product listings, buyer/supplier dashboards and admin workflow.</p>
+        <div class="card-tags"><span class="card-tag">FastAPI</span><span class="card-tag">PostgreSQL</span><span class="card-tag">HTML/CSS/JS</span><span class="card-tag">Railway</span><span class="card-tag">Vercel</span></div>
         <div class="card-links">
-          <a href="#" class="card-link">⌥ GitHub</a>
-          <a href="#" class="card-link">↗ Demo</a>
+          <a href="https://trade-hub-tradehubpk.vercel.app/" target="_blank" class="card-link">↗ Live</a>
+          <a href="https://github.com/arslan-saeed-coder/Trade-Hub" target="_blank" class="card-link">⌥ GitHub</a>
         </div>
       </div>
     </div>
-
-    <div class="project-card reveal" style="transition-delay:0.2s">
+<div class="project-card reveal" style="transition-delay:0.2s">
       <div class="card-hover-glow"></div>
-      <div class="card-top"><div class="card-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div><span class="card-type">VULNERABILITY RESEARCH</span></div>
+      <div class="project-img"><img src="assets/soc-dashboard.png" alt="SOC Monitoring Lab screenshot"></div>
+      <div class="card-top"><div class="card-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div><span class="card-type">CYBERSECURITY / BLUE TEAM</span></div>
       <div class="card-body">
-        <span class="card-icon">💀</span>
-        <h3 class="card-title">CVE-2024-0001</h3>
-        <p class="card-desc">Discovered and responsibly disclosed a critical RCE vulnerability in a widely-used open-source authentication library affecting 40,000+ deployments worldwide.</p>
-        <div class="card-tags"><span class="card-tag">0-Day</span><span class="card-tag">RCE</span><span class="card-tag">CVE</span><span class="card-tag">Disclosure</span></div>
+        <span class="card-icon">🛡️</span><div style="display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:.5rem"><h3 class="card-title" style="margin-bottom:0">SOC Monitoring Lab</h3><span class="project-badge">Cyber Project</span></div>
+        <p class="card-desc">Built a hands-on SOC lab: Windows Defender Firewall, Snort IDS, Python + Streamlit dashboard, RBAC, MITRE ATT&CK mapping and 864 IDS alerts.</p>
+        <div class="card-tags"><span class="card-tag">Snort</span><span class="card-tag">Firewall</span><span class="card-tag">Python</span><span class="card-tag">Streamlit</span><span class="card-tag">MITRE ATT&CK</span><span class="card-tag">RBAC</span></div>
         <div class="card-links">
-          <a href="#" class="card-link">⌥ Write-Up</a>
-          <a href="#" class="card-link">↗ NVD Entry</a>
+          
+          <a href="https://github.com/ArslanSaeed17/Cyber-Security-Monitoring-Analysis-System-using-Core-Data-Structures" target="_blank" class="card-link">⌥ GitHub</a>
         </div>
       </div>
     </div>
-
-    <div class="project-card reveal" style="transition-delay:0.3s">
+<div class="project-card reveal" style="transition-delay:0.3s">
       <div class="card-hover-glow"></div>
-      <div class="card-top"><div class="card-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div><span class="card-type">BLUE TEAM</span></div>
+      <div class="project-img"><img src="https://image.thum.io/get/width/900/crop/650/noanimate/https://studentsmarketpalace.vercel.app/" alt="Student Market Palace screenshot"></div>
+      <div class="card-top"><div class="card-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div><span class="card-type">FULL STACK MARKETPLACE</span></div>
       <div class="card-body">
-        <span class="card-icon">🛡️</span>
-        <h3 class="card-title">SENTINEL IDS</h3>
-        <p class="card-desc">Machine learning-powered intrusion detection system that identifies anomalous network behavior using behavioral analysis with 99.2% accuracy and <0.1% false positives.</p>
-        <div class="card-tags"><span class="card-tag">ML</span><span class="card-tag">IDS</span><span class="card-tag">Python</span><span class="card-tag">TensorFlow</span></div>
+        <span class="card-icon">🎓</span><div style="display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:.5rem"><h3 class="card-title" style="margin-bottom:0">Student Market Palace</h3><span class="project-badge">Marketplace</span></div>
+        <p class="card-desc">Campus buy-and-sell platform with university-focused marketplace flow, product cards, authentication concepts, AI chatbot widget and deployment cycle.</p>
+        <div class="card-tags"><span class="card-tag">FastAPI</span><span class="card-tag">Supabase/PostgreSQL</span><span class="card-tag">HTML/CSS/JS</span><span class="card-tag">Railway</span><span class="card-tag">Vercel</span></div>
         <div class="card-links">
-          <a href="#" class="card-link">⌥ GitHub</a>
-          <a href="#" class="card-link">↗ Paper</a>
+          <a href="https://studentsmarketpalace.vercel.app/" target="_blank" class="card-link">↗ Live</a>
+          <a href="https://github.com/ArslanSaeed17/Student-Market-Palace-Website" target="_blank" class="card-link">⌥ GitHub</a>
         </div>
       </div>
     </div>
-
-    <div class="project-card reveal" style="transition-delay:0.1s">
+<div class="project-card reveal" style="transition-delay:0.1s">
       <div class="card-hover-glow"></div>
-      <div class="card-top"><div class="card-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div><span class="card-type">MALWARE ANALYSIS</span></div>
+      <div class="project-img"><img src="https://image.thum.io/get/width/900/crop/650/noanimate/https://brall-community.vercel.app/" alt="Brall Community screenshot"></div>
+      <div class="card-top"><div class="card-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div><span class="card-type">FULL STACK + ADMIN</span></div>
       <div class="card-body">
-        <span class="card-icon">🧬</span>
-        <h3 class="card-title">VIPER SANDBOX</h3>
-        <p class="card-desc">Automated malware analysis sandbox with dynamic behavioral profiling. Analyzes 500+ indicators of compromise and generates detailed IOC reports for threat hunting teams.</p>
-        <div class="card-tags"><span class="card-tag">Sandbox</span><span class="card-tag">IOC</span><span class="card-tag">Threat Intel</span><span class="card-tag">Go</span></div>
+        <span class="card-icon">🏛️</span><div style="display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:.5rem"><h3 class="card-title" style="margin-bottom:0">Brall Community</h3><span class="project-badge">Full Stack</span></div>
+        <p class="card-desc">Community heritage platform with branding, gallery, history sections, FastAPI backend, Supabase database and protected admin workflow.</p>
+        <div class="card-tags"><span class="card-tag">FastAPI</span><span class="card-tag">Supabase</span><span class="card-tag">Railway</span><span class="card-tag">Vercel</span><span class="card-tag">HTML/CSS/JS</span></div>
         <div class="card-links">
-          <a href="#" class="card-link">⌥ GitHub</a>
-          <a href="#" class="card-link">↗ Docs</a>
+          <a href="https://brall-community.vercel.app/" target="_blank" class="card-link">↗ Live</a>
+          <a href="https://github.com/ArslanSaeed17/Brall-Community-" target="_blank" class="card-link">⌥ GitHub</a>
         </div>
       </div>
     </div>
-
-    <div class="project-card reveal" style="transition-delay:0.2s">
+<div class="project-card reveal" style="transition-delay:0.2s">
       <div class="card-hover-glow"></div>
-      <div class="card-top"><div class="card-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div><span class="card-type">CTF CHALLENGE</span></div>
+      <div class="project-img"><img src="https://image.thum.io/get/width/900/crop/650/noanimate/https://pnp-woad.vercel.app/" alt="Punjab Probation Portal screenshot"></div>
+      <div class="card-top"><div class="card-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div><span class="card-type">WEB PORTAL</span></div>
       <div class="card-body">
-        <span class="card-icon">🏆</span>
-        <h3 class="card-title">DEFCON 32 — TOP 10</h3>
-        <p class="card-desc">Ranked in the top 10 at DEF CON 32 CTF, solving advanced binary exploitation, cryptography, and forensics challenges in the world's most prestigious hacking competition.</p>
-        <div class="card-tags"><span class="card-tag">CTF</span><span class="card-tag">Crypto</span><span class="card-tag">PWN</span><span class="card-tag">Forensics</span></div>
+        <span class="card-icon">⚖️</span><div style="display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:.5rem"><h3 class="card-title" style="margin-bottom:0">Punjab Probation Portal</h3><span class="project-badge">Portal</span></div>
+        <p class="card-desc">Government-style web portal built to demonstrate structured UI, departmental navigation and professional public-sector web design.</p>
+        <div class="card-tags"><span class="card-tag">HTML</span><span class="card-tag">CSS</span><span class="card-tag">JavaScript</span><span class="card-tag">Vercel</span></div>
         <div class="card-links">
-          <a href="#" class="card-link">⌥ Write-Ups</a>
-          <a href="#" class="card-link">↗ Scoreboard</a>
+          <a href="https://pnp-woad.vercel.app/" target="_blank" class="card-link">↗ Live</a>
+          <a href="https://github.com/ArslanSaeed17/Punjab-Probation-Parole-Department--Web-Portal" target="_blank" class="card-link">⌥ GitHub</a>
         </div>
       </div>
     </div>
-
-    <div class="project-card reveal" style="transition-delay:0.3s">
+<div class="project-card reveal" style="transition-delay:0.3s">
       <div class="card-hover-glow"></div>
-      <div class="card-top"><div class="card-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div><span class="card-type">BUG BOUNTY</span></div>
+      <div class="project-img"><img src="https://image.thum.io/get/width/900/crop/650/noanimate/https://hotel-booking-project-one.vercel.app/" alt="Hotel Booking Page screenshot"></div>
+      <div class="card-top"><div class="card-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div><span class="card-type">FRONTEND PROJECT</span></div>
       <div class="card-body">
-        <span class="card-icon">💰</span>
-        <h3 class="card-title">$</h3>
-        <p class="card-desc">Hall of fame entries across Google, Meta, Microsoft, and Apple. Discovered authentication bypasses, SSRF chains, and logic flaws across major platforms.</p>
-        <div class="card-tags"><span class="card-tag">HackerOne</span><span class="card-tag">Bugcrowd</span><span class="card-tag">Web</span><span class="card-tag">Auth</span></div>
+        <span class="card-icon">🏨</span><div style="display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:.5rem"><h3 class="card-title" style="margin-bottom:0">Hotel Booking Page</h3><span class="project-badge">Frontend</span></div>
+        <p class="card-desc">Responsive hotel booking web page with clean landing-page structure, booking-focused sections and modern UI design.</p>
+        <div class="card-tags"><span class="card-tag">HTML</span><span class="card-tag">CSS</span><span class="card-tag">JavaScript</span><span class="card-tag">Vercel</span></div>
         <div class="card-links">
-          <a href="#" class="card-link">⌥ Hall of Fame</a>
-          <a href="#" class="card-link">↗ H1 Profile</a>
+          <a href="https://hotel-booking-project-one.vercel.app/" target="_blank" class="card-link">↗ Live</a>
+          <a href="https://github.com/ArslanSaeed17/Hotel-booking-Web-Page-" target="_blank" class="card-link">⌥ GitHub</a>
         </div>
       </div>
     </div>
+<div class="project-card reveal" style="transition-delay:0.1s">
+      <div class="card-hover-glow"></div>
+      <div class="project-img"><img src="https://placehold.co/900x650/020c0e/00f5ff?text=RBAC+Library+System" alt="Library RBAC System screenshot"></div>
+      <div class="card-top"><div class="card-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div><span class="card-type">C++ / SECURITY LOGIC</span></div>
+      <div class="card-body">
+        <span class="card-icon">📚</span><div style="display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:.5rem"><h3 class="card-title" style="margin-bottom:0">Library RBAC System</h3><span class="project-badge">Security Logic</span></div>
+        <p class="card-desc">Role-Based Access Control simulation for a college library system, demonstrating authentication logic, permissions and access boundaries.</p>
+        <div class="card-tags"><span class="card-tag">C++</span><span class="card-tag">OOP</span><span class="card-tag">RBAC</span><span class="card-tag">Data Structures</span></div>
+        <div class="card-links">
+          
+          <a href="https://github.com/ArslanSaeed17/RBAC-Simulation-for-College-Library-Management-System" target="_blank" class="card-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+<div class="project-card reveal" style="transition-delay:0.2s">
+      <div class="card-hover-glow"></div>
+      <div class="project-img"><img src="https://placehold.co/900x650/020c0e/00ff41?text=Full+Stack+Chat+App" alt="Full Stack Chat App screenshot"></div>
+      <div class="card-top"><div class="card-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div><span class="card-type">REALTIME APP</span></div>
+      <div class="card-body">
+        <span class="card-icon">💬</span><div style="display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:.5rem"><h3 class="card-title" style="margin-bottom:0">Full Stack Chat App</h3><span class="project-badge">Full Stack</span></div>
+        <p class="card-desc">Chat application project demonstrating authentication, messaging concepts and full-stack application structure.</p>
+        <div class="card-tags"><span class="card-tag">JavaScript</span><span class="card-tag">Firebase/Firestore</span><span class="card-tag">Auth</span><span class="card-tag">Frontend</span></div>
+        <div class="card-links">
+          
+          <a href="https://github.com/ArslanSaeed17/Full-Stack-Chat-App" target="_blank" class="card-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div></div></section>
 
-  </div>
+<section id="cyber"><div class="section-header reveal"><span class="section-num">05.</span><h2 class="section-title">Cybersecurity <span>Journey</span></h2><div class="section-line"></div></div>
+ <div class="timeline-grid">
+  <div class="timeline-card reveal"><span class="timeline-icon">🌐</span><h3>Networking Foundation</h3><p>Computer Networks, TCP/IP concepts, Wireshark packet analysis, Nmap enumeration and secure network configuration.</p></div>
+  <div class="timeline-card reveal"><span class="timeline-icon">🧪</span><h3>Hands-on Labs</h3><p>TryHackMe / Hack The Box practice, Kali Linux tools, information gathering and beginner CTF problem solving.</p></div>
+  <div class="timeline-card reveal"><span class="timeline-icon">🛡️</span><h3>SOC Lab</h3><p>Simulated Nmap scans, SYN flood, FTP brute force and Telnet intrusion attempts; detected activity using Snort and a custom dashboard.</p></div>
+  <div class="timeline-card reveal"><span class="timeline-icon">📚</span><h3>Current Learning</h3><p>CCNA and CEH enrolled, with future focus on eJPT, Security+, Active Directory labs and detection engineering.</p></div>
+ </div>
 </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <div class="section-header reveal">
-    <span class="section-num">04.</span>
-    <h2 class="section-title">Certifi<span>cations</span></h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="cert-grid">
-    <div class="cert-card reveal" style="transition-delay:0.05s">
-      <div class="cert-badge">🔒</div>
-      <div class="cert-name">OSCP</div>
-      <div class="cert-org">Offensive Security</div>
-      <div class="cert-year">2022</div>
-      <div class="cert-status">ACTIVE</div>
-    </div>
-    <div class="cert-card reveal" style="transition-delay:0.1s">
-      <div class="cert-badge">🛡️</div>
-      <div class="cert-name">CISSP</div>
-      <div class="cert-org">ISC²</div>
-      <div class="cert-year">2021</div>
-      <div class="cert-status">ACTIVE</div>
-    </div>
-    <div class="cert-card reveal" style="transition-delay:0.15s">
-      <div class="cert-badge">⚔️</div>
-      <div class="cert-name">CEH</div>
-      <div class="cert-org">EC-Council</div>
-      <div class="cert-year">2020</div>
-      <div class="cert-status">ACTIVE</div>
-    </div>
-    <div class="cert-card reveal" style="transition-delay:0.2s">
-      <div class="cert-badge">☁️</div>
-      <div class="cert-name">AWS Security</div>
-      <div class="cert-org">Amazon Web Services</div>
-      <div class="cert-year">2023</div>
-      <div class="cert-status">ACTIVE</div>
-    </div>
-    <div class="cert-card reveal" style="transition-delay:0.25s">
-      <div class="cert-badge">🔴</div>
-      <div class="cert-name">CRTE</div>
-      <div class="cert-org">Altered Security</div>
-      <div class="cert-year">2023</div>
-      <div class="cert-status">ACTIVE</div>
-    </div>
-    <div class="cert-card reveal" style="transition-delay:0.3s">
-      <div class="cert-badge">🌐</div>
-      <div class="cert-name">GWAPT</div>
-      <div class="cert-org">GIAC / SANS</div>
-      <div class="cert-year">2022</div>
-      <div class="cert-status">ACTIVE</div>
-    </div>
-  </div>
+<section id="certifications"><div class="section-header reveal"><span class="section-num">06.</span><h2 class="section-title">Resume & <span>Learning</span></h2><div class="section-line"></div></div>
+  <div class="cv-panel reveal"><div><h3>Professional CV</h3><p>My resume includes education, technical skills, full-stack marketplace projects, cybersecurity coursework, certifications, freelance experience and portfolio links.</p><ul class="cv-list"><li>BS Cybersecurity — UMT Lahore</li><li>TradeHub PK — Real client marketplace</li><li>FastAPI, Supabase, PostgreSQL, JavaScript</li><li>SOC Lab, Snort IDS, MITRE ATT&CK, Network Security</li><li>CCNA & CEH — Currently enrolled</li></ul></div><div class="hero-btns" style="justify-content:flex-start"><a class="btn" href="assets/Arslan_Saeed_CV.pdf" target="_blank">⬇ Download CV</a><a class="btn btn-outline" href="https://www.linkedin.com/in/arslan-saeed-2a02b128b/" target="_blank">↗ LinkedIn</a></div></div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-header reveal">
-    <span class="section-num">05.</span>
-    <h2 class="section-title">Get In <span>Touch</span></h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="contact-wrapper">
-    <div class="contact-info reveal">
-      <h3>Let's Secure Your Systems</h3>
-      <p>Whether you need a penetration test, security audit, incident response, or just want to talk shop — I'm available for contract work, consulting, and full-time opportunities.</p>
-      <div class="contact-links">
-        <a href="arslanbrall@gmail.com" class="contact-link">
-          <span class="cl-icon">✉</span>
-          <div class="cl-info">
-           <span class="cl-label">Email</span>
-            <span class="cl-value">arslanbrall@gmail.com </span> turn into when we click emailshould be open
-          </div>
-          <span style="color:var(--text-dim)">→</span>
-        </a>
-        <a href="#" class="contact-link">
-          <span class="cl-icon">🐦</span>
-          <div class="cl-info">
-<span class="cl-label">WhatsApp</span>
-<span class="cl-value">
-    <a href="https://wa.me/923008971489" target="_blank">
-        +92 300 8971489
-    </a>
-</span>
-          </div>
-          <span style="color:var(--text-dim)">→</span>
-        </a>
-        <a href="#" class="contact-link">
-          <span class="cl-icon">🔗</span>
-          <div class="cl-info">
-            <span class="cl-label">LinkedIn</span>
-            <span class="cl-value"https://www.linkedin.com/in/arslan-saeed-2a02b128b//span>
-          </div>
-          <span style="color:var(--text-dim)">→</span>
-        </a>
-        <a href="#" class="contact-link">
-          <span class="cl-icon">🐱</span>
-          <div class="cl-info">
-            <span class="cl-label">GitHub</span>
-            <span class="cl-value">github.com/Hacker73435</span>
-          </div>
-          <span style="color:var(--text-dim)">→</span>
-        </a>
-      </div>
-    </div>
-    <form class="contact-form reveal" style="transition-delay:0.2s" onsubmit="handleSubmit(event)">
-      <div class="form-group">
-        <label>// your name</label>
-        <input type="text" placeholder="Ali" required>
-      </div>
-      <div class="form-group">
-        <label>// Email Address</label>
-        <input type="email" placeholder="Ali@company.com" required>
-      </div>
-      <div class="form-group">
-        <label>// Subject</label>
-        <input type="text" placeholder="Pentest Engagement">
-      </div>
-      <div class="form-group">
-        <label>// Message</label>
-        <textarea placeholder="Tell me about your security needs..."></textarea>
-      </div>
-      <button type="submit" class="btn-submit">
-        <span>⌁ SEND ENCRYPTED MESSAGE</span>
-      </button>
-    </form>
-  </div>
+<section id="contact"><div class="section-header reveal"><span class="section-num">07.</span><h2 class="section-title">Get In <span>Touch</span></h2><div class="section-line"></div></div>
+  <div class="contact-wrapper"><div class="contact-info reveal"><h3>Let's Build Something Useful</h3><p>Available for business websites, landing pages, full-stack web apps, admin panels, portfolio websites, marketplace projects and junior cybersecurity opportunities.</p><div class="contact-links">
+    <a href="mailto:contact@arslansaeed.live" class="contact-link"><span class="cl-icon">✉</span><div class="cl-info"><span class="cl-label">Email</span><span class="cl-value">contact@arslansaeed.live</span></div><span style="color:var(--text-dim)">→</span></a>
+    <a href="https://wa.me/923008971489" target="_blank" class="contact-link"><span class="cl-icon">💬</span><div class="cl-info"><span class="cl-label">WhatsApp</span><span class="cl-value">+92 300 8971489</span></div><span style="color:var(--text-dim)">→</span></a>
+    <a href="https://www.linkedin.com/in/arslan-saeed-2a02b128b/" target="_blank" class="contact-link"><span class="cl-icon">🔗</span><div class="cl-info"><span class="cl-label">LinkedIn</span><span class="cl-value">linkedin.com/in/arslan-saeed</span></div><span style="color:var(--text-dim)">→</span></a>
+    <a href="https://github.com/Hacker73435" target="_blank" class="contact-link"><span class="cl-icon">🐱</span><div class="cl-info"><span class="cl-label">GitHub</span><span class="cl-value">github.com/Hacker73435</span></div><span style="color:var(--text-dim)">→</span></a>
+  </div></div>
+  <form class="contact-form reveal" style="transition-delay:0.2s" onsubmit="handleSubmit(event)"><div class="form-group"><label>// your name</label><input type="text" placeholder="Ali" required></div><div class="form-group"><label>// Email Address</label><input type="email" placeholder="ali@company.com" required></div><div class="form-group"><label>// Subject</label><input type="text" placeholder="Website / Web App Project"></div><div class="form-group"><label>// Message</label><textarea placeholder="Tell me about your website, business or project..."></textarea></div><button type="submit" class="btn-submit"><span>⌁ SEND MESSAGE</span></button></form></div>
 </section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2024 <span>0xCYPHER</span> // Arslan-Saeed portfolio — Built with ☕ and too many late nights.</p>
-  <p style="margin-top:8px;font-size:0.65rem;opacity:0.4;">ALL SYSTEMS NOMINAL • ENCRYPTED • SECURE</p>
-</footer>
-
-<script>
+<footer><p>© 2026 <span>Arslan Saeed</span> // Building secure software today for a better digital tomorrow.</p><p style="margin-top:8px;font-size:0.65rem;opacity:0.4;">FULL STACK • CYBERSECURITY • DEPLOYED PROJECTS</p></footer><script>
 // ── MATRIX RAIN ──
 (function() {
   const canvas = document.getElementById('matrix-canvas');
@@ -1444,12 +1292,11 @@
 // ── TYPING EFFECT ──
 (function() {
   const lines = [
-    'Penetration Tester',
-    'Security Researcher',
-    'Red Team Operator',
-    'CTF Competitor',
-    'Bug Bounty Hunter',
-    'Exploit Developer'
+    'Full Stack Developer',
+    'FastAPI Backend Developer',
+    'Cybersecurity Student',
+    'AI Integration Enthusiast',
+    'SOC Lab Builder'
   ];
   let lineIndex = 0, charIndex = 0, deleting = false;
   const el = document.getElementById('typing-text');
@@ -1479,13 +1326,13 @@
 // ── COUNTER ANIMATION ──
 function animateCounters() {
   document.querySelectorAll('[data-target]').forEach(el => {
-    const target = +el.dataset.target;
-    const suffix = el.dataset.target.includes('.') ? '' : '';
+    const target = parseInt(el.dataset.target, 10) || 0;
+    const suffix = el.dataset.suffix || '';
     let current = 0;
-    const step = target / 60;
+    const step = Math.max(1, target / 60);
     const timer = setInterval(() => {
       current = Math.min(current + step, target);
-      el.textContent = Math.floor(current) + (target >= 100 ? '+' : target >= 10 ? '+' : '');
+      el.textContent = Math.floor(current) + suffix;
       if (current >= target) clearInterval(timer);
     }, 25);
   });
@@ -1562,5 +1409,28 @@ document.querySelectorAll('.project-card').forEach(card => {
   });
 });
 </script>
-</body>
-</html>
+<script>
+(function(){
+'use strict';
+const css=`#arslan-fab{position:fixed;bottom:30px;right:30px;z-index:2147483647;width:66px;height:66px;border-radius:50%;border:none;cursor:pointer;background:linear-gradient(135deg,#00f5ff,#00ff41);color:#020c0e;font-size:28px;box-shadow:0 0 30px rgba(0,245,255,.55);animation:arslan-bounce 2s infinite}#arslan-fab:hover{transform:scale(1.1)}@keyframes arslan-bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}#arslan-chat{position:fixed;bottom:108px;right:30px;z-index:2147483646;width:370px;max-height:calc(100vh - 140px);display:none;flex-direction:column;border-radius:18px;overflow:hidden;background:rgba(2,12,14,.96);border:1px solid rgba(0,245,255,.32);box-shadow:0 30px 80px rgba(0,0,0,.75),0 0 50px rgba(0,245,255,.14);font-family:Arial,sans-serif}#arslan-chat.open{display:flex;animation:arslan-in .28s ease}@keyframes arslan-in{from{opacity:0;transform:scale(.85) translateY(30px)}to{opacity:1;transform:scale(1)}}#arslan-head{padding:14px 15px;background:linear-gradient(135deg,rgba(0,245,255,.18),rgba(0,255,65,.12));border-bottom:1px solid rgba(0,245,255,.2);display:flex;gap:10px;align-items:center}.arslan-logo{width:42px;height:42px;border-radius:12px;background:#020c0e;border:1px solid rgba(0,245,255,.4);display:flex;align-items:center;justify-content:center;font-size:22px}.arslan-h-title{color:white;font-weight:800;font-size:14px}.arslan-h-sub{color:#4a7a80;font-size:11px;margin-top:2px}#arslan-close{margin-left:auto;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.13);color:#b0e8ee;width:30px;height:30px;border-radius:50%;cursor:pointer}#arslan-msgs{padding:14px;display:flex;flex-direction:column;gap:10px;overflow:auto;min-height:270px;max-height:420px}.am{max-width:86%;padding:10px 13px;border-radius:15px;font-size:13px;line-height:1.55;color:#e8feff}.am.bot{align-self:flex-start;background:rgba(0,245,255,.06);border:1px solid rgba(0,245,255,.14);border-bottom-left-radius:4px}.am.user{align-self:flex-end;background:linear-gradient(135deg,#00a8b5,#00ff41);color:#020c0e;border-bottom-right-radius:4px;font-weight:600}.arslan-sugg{display:flex;gap:6px;flex-wrap:wrap;padding:0 12px 10px}.arslan-sugg button{background:rgba(0,245,255,.07);border:1px solid rgba(0,245,255,.2);color:#b0e8ee;border-radius:18px;padding:6px 10px;font-size:11px;cursor:pointer}.arslan-sugg button:hover{color:#00f5ff;border-color:#00f5ff}#arslan-input-row{display:flex;gap:8px;padding:12px;border-top:1px solid rgba(0,245,255,.16);background:rgba(0,0,0,.2)}#arslan-input{flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(0,245,255,.2);border-radius:12px;color:white;padding:10px;outline:none}#arslan-send{width:40px;border:none;border-radius:50%;background:#00f5ff;color:#020c0e;cursor:pointer;font-weight:bold}@media(max-width:440px){#arslan-chat{width:calc(100vw - 24px);right:12px}#arslan-fab{right:16px;bottom:18px}}`;
+const st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
+const fab=document.createElement('button');fab.id='arslan-fab';fab.innerHTML='🤖';
+const chat=document.createElement('div');chat.id='arslan-chat';chat.innerHTML=`<div id="arslan-head"><div class="arslan-logo">💻</div><div><div class="arslan-h-title">Arslan AI Assistant</div><div class="arslan-h-sub">Portfolio · Projects · Services · CV</div></div><button id="arslan-close">✕</button></div><div id="arslan-msgs"><div class="am bot">👋 Hi, I’m Arslan’s portfolio assistant. Ask me about his skills, projects, services, CV, cybersecurity journey, or contact details.</div></div><div class="arslan-sugg"><button>Best project?</button><button>Download CV</button><button>Services</button><button>Cyber skills</button><button>Contact</button></div><div id="arslan-input-row"><input id="arslan-input" placeholder="Ask about Arslan..." maxlength="300"><button id="arslan-send">➤</button></div>`;
+document.body.appendChild(fab);document.body.appendChild(chat);
+const KB=[
+{keys:['best','top','project','tradehub','client'],ans:'⭐ <b>Best project:</b> TradeHub PK — a real client B2B wholesale marketplace with supplier directory, product listings, dashboards, admin workflow and deployment.<br><br>Live: <a style="color:#00f5ff" target="_blank" href="https://trade-hub-tradehubpk.vercel.app/">TradeHub</a><br>GitHub: <a style="color:#00f5ff" target="_blank" href="https://github.com/arslan-saeed-coder/Trade-Hub">Repository</a>'},
+{keys:['cv','resume','download'],ans:'📄 You can download Arslan’s CV here:<br><br><a style="color:#00f5ff" target="_blank" href="assets/Arslan_Saeed_CV.pdf">Download CV</a>'},
+{keys:['service','services','hire','website','business'],ans:'🚀 <b>Services:</b><br>• Business websites<br>• Landing pages<br>• Portfolio websites<br>• Full-stack web apps<br>• Admin panels<br>• Marketplace platforms<br>• Deployment support<br><br>Best contact: WhatsApp +92 300 8971489'},
+{keys:['skill','skills','tech','stack'],ans:'🧰 <b>Core Skills:</b><br>Frontend: HTML, CSS, JavaScript<br>Backend: Python, FastAPI, REST APIs<br>Database: Supabase, PostgreSQL, SQLite, Firebase<br>Deployment: Vercel, Railway, GitHub<br>Cyber: Networking, Kali, Nmap, Wireshark, Snort IDS, MITRE ATT&CK basics.'},
+{keys:['cyber','security','soc','snort','nmap','wireshark','ceh','ccna'],ans:'🛡️ <b>Cybersecurity path:</b><br>Arslan is a BS Cybersecurity student at UMT. He has built a SOC lab using Windows Defender Firewall, Snort IDS, Streamlit dashboard, RBAC and MITRE ATT&CK mapping. He is also enrolled in CCNA and CEH learning.'},
+{keys:['education','umt','degree','student'],ans:'🎓 Arslan Saeed is pursuing BS Cybersecurity at University of Management & Technology (UMT), Lahore. His work combines software development with a cybersecurity mindset.'},
+{keys:['contact','email','whatsapp','linkedin','github'],ans:'📬 <b>Contact Arslan:</b><br>Email: contact@arslansaeed.live<br>WhatsApp: <a style="color:#00f5ff" target="_blank" href="https://wa.me/923008971489">+92 300 8971489</a><br>LinkedIn: <a style="color:#00f5ff" target="_blank" href="https://www.linkedin.com/in/arslan-saeed-2a02b128b/">Profile</a><br>GitHub: <a style="color:#00f5ff" target="_blank" href="https://github.com/Hacker73435">GitHub</a>'},
+{keys:['available','freelance','internship','remote'],ans:'✅ Arslan is available for freelance web development projects, business websites, admin panels, marketplace projects, remote collaboration and junior cybersecurity/software internship opportunities.'}
+];
+function reply(q){q=q.toLowerCase();for(const item of KB){if(item.keys.some(k=>q.includes(k)))return item.ans;}return 'I can answer about Arslan’s projects, skills, services, CV, cybersecurity journey, education, and contact details. Try: “best project”, “services”, “cyber skills”, or “download CV”.';}
+function add(html,cls){const m=document.getElementById('arslan-msgs');const d=document.createElement('div');d.className='am '+cls;d.innerHTML=html;m.appendChild(d);m.scrollTop=m.scrollHeight;}
+function send(){const inp=document.getElementById('arslan-input');const t=inp.value.trim();if(!t)return;inp.value='';add(t,'user');setTimeout(()=>add(reply(t),'bot'),450)}
+fab.onclick=()=>chat.classList.toggle('open');document.getElementById('arslan-close').onclick=()=>chat.classList.remove('open');document.getElementById('arslan-send').onclick=send;document.getElementById('arslan-input').addEventListener('keydown',e=>{if(e.key==='Enter')send()});document.querySelector('.arslan-sugg').onclick=e=>{if(e.target.tagName==='BUTTON'){document.getElementById('arslan-input').value=e.target.textContent;send();}};
+})();
+</script>
+</body></html>
